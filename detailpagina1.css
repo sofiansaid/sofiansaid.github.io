@@ -1,0 +1,181 @@
+*
+    {   
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+body
+    {
+        width: 50em;
+        margin: 0 auto;
+        height: 100%;
+        font-family: 'Inria Sans', sans-serif;
+        position: relative;
+    }
+#websitelogo
+    {
+        width: 20%;
+        float:left;
+    }
+#bovenkantdetail
+    {
+        width: 100%;
+        background-color: green;
+
+    }
+    #mainnav
+    {
+        width: 60%;
+        float:left;
+
+    }
+#mainnav > ul
+    {
+        list-style-type: none;
+       
+    }
+#mainnav > ul > li
+    {
+        float: left;
+    }
+#mainnav.verticale-menu
+    {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+#mainnav.verticale-menu ul
+{
+        list-style: none;
+        padding: 0;
+    }
+#mainnav.verticale-menu ul li {
+        display: inline; 
+        margin-right: 10px; 
+    }
+
+#mainnav.verticale-menu ul li a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6A2D79;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#vraag
+{
+    float: left;
+    width: 5%;
+    height: 5%;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#vraag > img 
+{
+        width: 100%;
+        height: 100%;
+}
+
+#vraag:hover
+{
+    cursor: pointer;
+}
+
+#menu-toggle
+{
+    display: none;
+}
+
+.hamburger /* hamburgermenu instellinge */
+{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+.hamburger span
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: yellow;
+}
+.hamburger span:nth-child(1)
+{
+    top: 0;
+}
+.hamburger span:nth-child(2)
+{
+    top: 9px;
+}
+.hamburger span:nth-child(3)
+{
+    bottom: 0;
+}
+
+.menu 
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: blue;
+    color: white;
+    z-index: 1;
+    display: none;
+}
+.menu ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 0;
+}
+.menu ul li
+{
+    padding: 10px;
+}
+
+.menu ul li a
+{
+    color: brown;
+    text-decoration: none;
+
+}
+#menu-toggle:checked ~ .menu
+{
+    right: 0;
+}
+#menu-toggle:checked + .menu 
+{
+    display: block;
+}
+#doenintro
+{
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+#doen{
+    margin-left: 20px;
+}
+#doenbazaar{
+   position: absolute;
+   width: 30%;
+   left: 0;
+}
+#doen h1, #doen p 
+{
+    margin-top: 0;
+}
