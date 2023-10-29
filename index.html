@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website voor Beverwijkbezoekers">
+        <meta name="author" content="Sofian Said">
+        <link rel="stylesheet" href="css/websitestyle.css" type="text/css">
+        <link rel="icon" href="img/favicon-16x16.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+        <title>VisitBeverwijk</title>
+    </head>
+    <body>
+        <header id="bovenkant">
+
+            <!--logo-->
+            <img title="Logo" id="websitelogo" src="img/LOGOVOORWEBSITE_93x100.png" alt="Website Logo"/>
+            <!-- hor nav-->
+            <nav id="mainnav" class="verticale-menu">
+                <ul>
+                    <li>
+                        <a href="doen.html">
+                            Doen
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            Plan het
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            Extra
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--zoek-->
+            <a id="vraag" href="#" onclick="openSearch()">
+                <img src="img/zoeklogo.png" alt="Search Icon"/>
+            </a>
+            <script>
+                function openSearch() 
+                { 
+                    alert("Zoek...");
+                }
+            </script>
+        
+        <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Bezienswaardigheden</a></li>
+                    <li><a href="#">Winkelen</a></li>
+                    <li><a href="#">Eten/drinken</a></li>
+                    <li><a href="#">Activiteiten</a></li>
+                </ul>
+            </nav>
+
+            <!-- payoff -->
+            <h1 id="payoff">
+                    
+                    <p><strong>Welkom Aardbei</strong><p>Ontdek de verborgen stad van Nederland!</p>
+            </h1>
+        </header>
+
+        <section id="eersteintro">
+            <p>Bij VisitBeverwijk.nl vind je informatie over bezienswaardigheden, activiteiten, restaurants, accommodaties en evenementen in Beverwijk. Laat je verrassen door boeiende verhalen over de geschiedenis van de stad en ontdek de vele mogelijkheden voor plezier en vermaak.</p>
+        </section>
+        <section class="lijn"></section>
+
+        <section id="tweedeintro">
+            <p>We willen je laten zien hoe prachtig Beverwijk is en je 
+                uitnodigen om deze stad te verkennen. Of je nu een dagje 
+                uit wilt of een heel weekend wilt doorbrengen, wij zijn 
+                hier om je te inspireren.Begin je reis hier en ontdek de magie van Beverwijk!
+
+            </p>
+            
+        </section>
+
+        <h1>Ontdek in de buurt</h1>
+
+        <section id="ontdeksectie">
+            <article id="assumburg" class="article">
+                <a href="https://www.kasteeltuinassumburg.nl/">
+                <img title="kasteelassumburg" id="kasteelassumburg" src="/img/kasteelassumburg.jpg" alt="Foto van Kasteel">
+                <h3>Kasteel Assumburg</h3>
+                </a>
+                <p>Kasteel Assumburg in de buurt van Beverwijk is een prachtig middeleeuws kasteel. Op dezelfde plek als 300 jaar geleden is een tuin aangelegd in Frans classicistische stijl. Bezoekers ervaren de tuin als een eiland van rust, ruimte en tijdloosheid. Dat is de kern van de aantrekkingskracht van de tuin, die zeker uw bezoek waard zal zijn.</p>
+            </article>
+            <article id="goudsouk" class="article">
+                <a href="https://debazaar.nl/hallen/goudsouk/">
+                <img title="goudsouk" id="goudsouk" src="/img/goudsouk.png" alt="Foto van goudsouk">
+                <h3>Goudsouk</h3>
+                </a>
+                <p>De goudmarkt van Beverwijk. Vind hier alle soorten goud voor je geliefde in veel verschillende goudwinkeltjes onder een dak. Voor iedereen wat!</p>
+            </article>
+        </section>
+        <h2 class="kennemertheater">Kennemer Theater</h2>
+        <section id="kennemertheatersection">            
+            <article id="Merijn" class="article-inhoud">
+            <a href="https://www.kennemertheater.nl/">
+                <img title="Merijnscholtenfoto" id="Merijnscholtenfoto" src="/img/evenement11536x480.webp" alt="Merijn Scholten">
+                <h3>Merijn Scholten</h3>
+            </a>
+                <p>4 Oktober 21:30 - Kennemer Theater Beverwijk</p>
+            </article>
+            <article id="Dums" class="article-inhoud">
+            <a href="https://www.kennemertheater.nl/">
+                <img title="Dums" id="Dumsunitedfoto" src="/img/evenement2.webp" alt="Dumsunited">                
+                <h3>Dums United</h3>
+            </a>
+                <p>1 November 22:00 - Kennemer Theater Beverwijk</p>
+            </article>
+            <article id="Magisch" class="article-inhoud">
+            <a href="https://www.kennemertheater.nl/">
+                <img title="MagischeKaart" id="MagischeKaartfoto" src="/img/evenement3.webp" alt="MagischeKaart">                
+                <h3>De magische kast (leeftijd 4 tot 12)</h3>
+            </a>
+                <p>7 Oktober 17:00 - Kennemer Theater Beverwijk</p>
+            </article>
+            <article id="Steven" class="article-inhoud">
+            <a href="https://www.kennemertheater.nl/">
+                <img title="Stevenbrunswijk" id="Stevenbrunswijkfoto" src="/img/evenemnt5.webp" alt="Stevenbrunswijk">                
+                <h3>Steven Brunswijk</h3>
+            </a>
+                <p>30 Oktober 19:00 - Kennemer Theater Beverwijk</p>
+            </article>
+            <article id="Murder" class="article-inhoud">
+            <a href="https://www.kennemertheater.nl/">
+                <img title="Oriental" id="MurderOrientalfoto" src="/img/img16980_orig-1536x720.webp" alt="MurderOriental">                
+                <h3>Oriental Express</h3>
+            </a>
+                <p>25 Oktober 21:00 - Kennemer Theater Beverwijk</p>
+            </article>
+            <article id="Bumba" class="article-inhoud">
+            <a href="https://www.kennemertheater.nl/">
+                <img title="Bumba" id="BumbaShow" src="/img/6.webp" alt="BumbaShow">                
+                <h3>BumbaShow</h3>
+            </a>
+                <p>25 Oktober 12:00 - Kennemer Theater Beverwijk</p>
+            </article>
+        </section>
+        <section id="wistjedat" class="wistjedat-inhoud">
+            <h2>Wist je dat?</h2>
+            <article class="articletext">
+                <figure class="figure-inhoud">
+                    <img title="Napoleon" id="fotovannapoleon" src="img/29466947-fb0d-47c0-9230-eac54c869a49_thumb1440.webp"  alt="Napoleon"> 
+                </figure>
+                <article class="articles-inhoud">
+                    <h3>Erebogen voor de keizer</h3>
+                    <p>
+                        Tijdens het verblijf van keizer Napoleon Bonaparte in
+                        Noord-Holland in oktober 1811 maakten ook de steden en dorpen in
+                        Kennemerland kennis met hun nieuwe heerser. Wat Beverwijk zo
+                        speciaal maakt is dat Napoleon hier een korte toespraak heeft
+                        gegeven en heeft geluisterd naar het toenmalige Gemeentebestuur
+                        van Beverwijk.
+                    </p>
+                </article>
+            </article>
+            <article class="articletext">
+                <figure class="figure-inhoud">
+                    <img title="rodekruis" id="fotovanziekenhuis" src="img/Wim-Meijer-Fotografie_MG_9884-715x407-715x407.jpg"  alt="RodeKruis">
+                </figure>
+                <article class="articles-inhoud">
+                    <h3>Brandwondencentrum</h3>
+                    <p>
+                        Het Brandwondencentrum van het Rode Kruis Ziekenhuis staat
+                        nationaal en internationaal aan de top. Het Rode Kruis
+                        Ziekenhuis staat in Beverwijk en heeft een polikliniek in
+                        Heemskerk. Dit Brandwondencentrum is een van de 3 in heel
+                        Nederland.
+                    </p>
+                </article>
+            </article>
+            <article class="articletext">
+                <figure class="figure-inhoud">
+                    <img title="bazaar" id="fotovanbazaar" src="img/Bazaar_Beverwijk05.jpg"  alt="Bazaar">
+                </figure>
+                <article class="articles-inhoud">
+                    <h3>Grootste overdekte markt van Europa</h3>
+                    <p>
+                        Elk weekend komen er ongeveer 40.000 mensen naar de markten. De Bazaar heeft vooral een reputatie opgebouwd als verzamelpunt van handelaren met een niet-Nederlandse achtergrond, die veel zogenoemde "exotische" goederen aanbieden.
+                    </p>
+                </article>
+            </article>
+        </section>
+        
+     <footer id="onderkant">
+        <section class="footer-inhoud">
+            <article class="links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="bezienswaardigheden.html">Bezienswaardigheden</a></li>
+                    <li><a href="eten.html">Eten/Drinken</a></li>
+                    <li><a href="winkelen.html">Winkelen</a></li>
+                    <li><a href="activiteiten.html">Activiteiten/Plezier</a></li>
+                </ul>
+            </article>
+            <section class="contact">
+                <h3>Contact</h3>
+                <p>Sofian Said</p>
+                <p>Inholland Haarlem</p>
+                <p>718660@student.inholland.nl</p>
+
+            </section>
+            <section class="extra">
+                <h3>Extra</h3>
+                <article>
+                <ul>
+                    <li><a href="#">Navigatie</a></li>
+                    <li><a href="#">Plan het</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                </article>
+            </section>
+
+        </section>
+        <section class="copyright">&copy;VisitBeverwijk</section>
+     </footer>
+    </body>
+</html>

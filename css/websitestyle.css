@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*
+    {   
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+body
+    {
+        width: 50em;
+        margin: 0 auto;
+        height: 100%;
+        font-family: 'Inria Sans', sans-serif;
+        position: relative;
+        flex-direction: column;
+    }
+
+
+img
+    {
+    width:100px;
+    }
+#bovenkant
+    {
+        width: 100%;
+        background-image: url(../img/beverwijkuitzicht.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+#websitelogo
+    {
+        width: 20%;
+        float:left;
+    }
+#mainnav
+    {
+        width: 60%;
+        float:left;
+
+    }
+
+#mainnav > ul
+    {
+        list-style-type: none;
+       
+    }
+#mainnav > ul > li
+    {
+        float: left;
+    }
+#mainnav.verticale-menu
+    {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+#mainnav.verticale-menu ul
+{
+        list-style: none;
+        padding: 0;
+    }
+#mainnav.verticale-menu ul li {
+        display: inline; 
+        margin-right: 10px; 
+    }
+
+#mainnav.verticale-menu ul li a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6A2D79;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+
+
+#vraag
+{
+    float: left;
+    width: 5%;
+    height: 5%;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#vraag > img 
+{
+        width: 100%;
+        height: 100%;
+}
+
+#vraag:hover
+{
+    cursor: pointer;
+}
+
+#menu-toggle
+{
+    display: none;
+}
+
+.hamburger /* hamburgermenu instellinge */
+{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+.hamburger span
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: yellow;
+}
+.hamburger span:nth-child(1)
+{
+    top: 0;
+}
+.hamburger span:nth-child(2)
+{
+    top: 9px;
+}
+.hamburger span:nth-child(3)
+{
+    bottom: 0;
+}
+
+.menu 
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: blue;
+    color: white;
+    z-index: 1;
+    display: none;
+}
+.menu ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 0;
+}
+.menu ul li
+{
+    padding: 10px;
+}
+
+.menu ul li a
+{
+    color: brown;
+    text-decoration: none;
+
+}
+#menu-toggle:checked ~ .menu
+{
+    right: 0;
+    visibility: visible;
+}
+#menu-toggle:checked + .menu 
+{
+    display: block;
+}
+
+#payoff 
+    {
+        clear: both;
+        padding-top: 250px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 300px;
+        color: white;
+    }
+
+
+#eersteintro{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20pt;
+    padding:  5px 0 30px ;
+    text-align: center;
+    color: #8D0EAD;
+}
+.lijn{
+    width: 100%;
+    border-top: 4px solid #FFCB44; 
+    margin: 15px 0;
+    padding: 0 0 10px;
+}
+
+#tweedeintro{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18pt;
+}
+h1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 24pt;
+    text-align: left;
+    color: #6A2D79;
+}
+
+#ontdeksectie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#assumburg a:hover, #goudsouk a:hover
+{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.article{
+    flex: 0 0 48%;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 190px;
+}
+.article h3
+{
+    color: #FFCB44;
+    font-size: 20pt;
+}
+.article img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#kennemertheatersection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.kennemertheater
+{
+    color: #6A2D79;
+    font-size: 24pt;
+    margin-left: 10px;
+}
+.article-inhoud {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    text-align: left;
+}
+.article-inhoud a:hover
+{
+    color: lightblue;
+    text-decoration: none;
+}
+.article-inhoud img {
+    display: block;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 100px;
+}
+#wistjedat
+{
+    display: flex;
+    flex-direction: column;
+}
+#wistjedat h2
+{
+    color: #6A2D79;
+    font-size: 24pt;
+    margin-left: 10px;
+}
+.articletext
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+#wistjedat article
+{
+    display: flex;
+}
+.figure-inhoud
+{
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+figure img
+{
+    width: 180px;
+    max-width: 100%;
+    height: 170px;
+    margin-left: 10px;
+}
+.articles-inhoud
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #6A2D79;
+    font-weight: 700;
+    font-size: 20px;
+}
+.articles-inhoud h3
+{
+    margin: 0;
+    color: #FFCB44;
+}
+#onderkant
+{
+    background-color: #6A2D79;
+    padding: 20px;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;
+}
+.footer-inhoud
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 4px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.links
+{
+
+flex-grow: 1;
+flex-basis: 100%;
+}
+.links ul
+{
+    list-style-type: none;
+    line-height: 1.6;
+}
+.links a
+{
+    color: white;
+    text-decoration: none;
+}
+.links a:hover
+{
+    color: lightblue;
+    text-decoration: underline;
+}
+.contact
+{
+flex-grow: 1;
+flex-basis: 60%;
+}
+.contact p
+{
+    line-height: 2;
+}
+.extra
+{
+
+flex-grow: 1;
+flex-basis: 30%;
+}
+.extra ul
+{
+    list-style-type: none;
+    line-height: 2;
+}
+.extra a
+{
+    color: white;
+    text-decoration: none;
+}
+.extra a:hover
+{
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.footer-inhoud h3
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.copyright
+{
+    padding: 15px 0;
+    text-align: right;
+    border-top: 1px solid;
+}
+@media (max-width: 768px){
+    body{
+        width: 50em;
+    }
+    #bovenkant{
+        background-size: cover;
+    }
+    #websitelogo, #mainnav{
+        width: 100%;
+        float: none;
+    }
+    #mainnav > ul, #mainnav.verticale-menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mainnav > ul > li, #mainnav.verticale-menu ul li {
+        float: none;
+        display: inline;
+        margin-right: 0;
+    }
+    #vraag {
+        float: none;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    #menu-toggle{
+        display: block;
+    }
+    #payoff{
+        clear: both;
+        padding-top: 250px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 300px;
+        color: white;
+    }
+    #eersteintro{
+        font-family: 'Inria Sans', sans-serif;
+        font-weight: 700;
+        font-size: 20pt;
+        padding:  5px 0 30px ;
+        text-align: center;
+        color: #8D0EAD;
+    }
+    .lijn{
+        width: 100%;
+        border-top: 4px solid #FFCB44;
+        margin: 15px 0;
+        padding: 0 0 10px;
+    }
+    #tweedeintro{
+        font-family: 'Inria Sans', sans-serif;
+        font-weight: 300;
+        font-size: 18pt;
+    }
+    h1{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 24pt;
+        text-align: left;
+        color: #6A2D79;
+    }
+    #ontdeksectie{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #assumburg a:hover, #goudsouk a:hover{
+        color: lightblue;
+        text-decoration: none;
+    }
+    .article{
+        flex: 0 0 48%;
+        text-align: left;
+        padding: 10px;
+        margin-bottom: 190px;
+    }
+    .article h3
+    {
+        color: #FFCB44;
+        font-size: 20pt;
+    }
+    .article img {
+        width: 100%;
+        height: 100%;
+    }
+    #kennemertheatersection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.kennemertheater
+{
+    color: #6A2D79;
+    font-size: 24pt;
+    margin-left: 10px;
+}
+.article-inhoud {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    text-align: left;
+}
+.article-inhoud a:hover
+{
+    color: lightblue;
+    text-decoration: none;
+}
+.article-inhoud img {
+    display: block;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 100px;
+}
+#wistjedat
+{
+    display: flex;
+    flex-direction: column;
+}
+#wistjedat h2
+{
+    color: #6A2D79;
+    font-size: 24pt;
+    margin-left: 10px;
+}
+.articletext
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+#wistjedat article
+{
+    display: flex;
+}
+.figure-inhoud
+{
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+figure img
+{
+    width: 180px;
+    max-width: 100%;
+    height: 170px;
+    margin-left: 10px;
+}
+.articles-inhoud
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #6A2D79;
+    font-weight: 700;
+    font-size: 20px;
+}
+.articles-inhoud h3
+{
+    margin: 0;
+    color: #FFCB44;
+}
+#onderkant
+{
+    background-color: #6A2D79;
+    padding: 20px;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;
+}
+.footer-inhoud
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 4px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.links
+{
+
+flex-grow: 1;
+flex-basis: 100%;
+}
+.links ul
+{
+    list-style-type: none;
+    line-height: 1.6;
+}
+.links a
+{
+    color: white;
+    text-decoration: none;
+}
+.links a:hover
+{
+    color: lightblue;
+    text-decoration: underline;
+}
+.contact
+{
+flex-grow: 1;
+flex-basis: 60%;
+}
+.contact p
+{
+    line-height: 2;
+}
+.extra
+{
+
+flex-grow: 1;
+flex-basis: 30%;
+}
+.extra ul
+{
+    list-style-type: none;
+    line-height: 2;
+}
+.extra a
+{
+    color: white;
+    text-decoration: none;
+}
+.extra a:hover
+{
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.footer-inhoud h3
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.copyright
+{
+    padding: 15px 0;
+    text-align: right;
+    border-top: 1px solid;
+}
+    }

@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*
+    {   
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+body
+    {
+        width: 50em;
+        margin: 0 auto;
+        height: 100%;
+        font-family: 'Inria Sans', sans-serif;
+        position: relative;
+    }
+#websitelogo
+    {
+        width: 20%;
+        float:left;
+    }
+#bovenkantdetail
+    {
+        width: 100%;
+        background-color: #972DB1;
+        display: block;
+        height: 170px;
+    }
+#mainnav
+    {
+        width: 60%;
+        float:left;
+
+    }
+#mainnav a:hover
+{
+    background-color: #CBC3E3;
+}
+#mainnav ul li:hover a
+{
+    background-color: plum;
+}
+#mainnav > ul
+    {
+        list-style-type: none;
+       
+    }
+#mainnav > ul > li
+    {
+        float: left;
+    }
+#mainnav.verticale-menu
+    {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+#mainnav.verticale-menu ul
+{
+        list-style: none;
+        padding: 0;
+    }
+#mainnav.verticale-menu ul li {
+        display: inline; 
+        margin-right: 10px; 
+    }
+
+#mainnav.verticale-menu ul li a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6A2D79;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#vraag
+{
+    float: left;
+    width: 5%;
+    height: 5%;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#vraag > img 
+{
+        width: 100%;
+        height: 100%;
+}
+
+#vraag:hover img
+{
+    cursor: pointer;
+    color: #BF6BD4;
+    filter: invert(50%);
+}
+
+#menu-toggle
+{
+    display: none;
+}
+
+.hamburger /* hamburgermenu instellinge */
+{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+.hamburger span
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: yellow;
+}
+.hamburger span:nth-child(1)
+{
+    top: 0;
+}
+.hamburger span:nth-child(2)
+{
+    top: 9px;
+}
+.hamburger span:nth-child(3)
+{
+    bottom: 0;
+}
+
+.menu 
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: blue;
+    color: white;
+    z-index: 1;
+    display: none;
+}
+.menu ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 0;
+}
+.menu ul li
+{
+    padding: 10px;
+}
+
+.menu ul li a
+{
+    color: brown;
+    text-decoration: none;
+
+}
+#menu-toggle:checked ~ .menu
+{
+    right: 0;
+}
+#menu-toggle:checked + .menu 
+{
+    display: block;
+}
+
+#introfoto
+{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#introfoto img
+{
+    width: 100%;
+    height: auto;
+}
+#introfoto h1
+{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: white;
+}
+.introtext
+{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #6A2D79;
+    font-size: 20pt;
+    
+}
+.eerstefotomettext
+{
+    position: relative;
+    width: 100%;
+}
+.eerstefotomettext img
+{
+    width: 100%;
+    height: auto;
+}
+.eerstefotomettext h2
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    color: white;
+}
+.textondereerstefoto
+{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #6A2D79;
+    font-size: 20pt;
+}
+#eten-drinken
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+#eten-drinken h1
+{
+    color: #FFCB44;
+    margin-left: 20px;
+}
+.vierfotos
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+.vierfotos figure
+{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+.vierfotos img
+{
+    width: 380px;
+    height: 350px;
+}
+.vierfotos figcaption
+{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    color: #6A2D79;
+    font-size: 22px;
+
+}
+figcaption:hover
+{
+    color: lightblue;
+}
+.vierfotos a
+{
+    text-decoration: none;
+}
+
+#fotosvanplek-text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text-foto
+{
+    display: flex;
+    gap: 20px;
+}
+.inhoud-figure
+{
+    flex: 0 0 auto;
+}
+.inhoud-figure img 
+{
+    width: 200px;
+    height: auto;
+}
+.articlestext-inhoud
+{
+    flex: 1 1 auto;
+}
+
+#ontdekdebazaarbutton /*Button voor de bazaar */
+{
+    background-color: #972DB1;
+    color: white;
+    border-radius: 40px;
+    height: 50px;
+    width: 400px;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+#ontdekdebazaarbutton:hover
+{
+    background-color: #BF6BD4;
+}
+#ontdekdebazaarbutton:link
+{
+    color: black;
+}
+.tweedefotomettext
+{
+    position: relative;
+    width: 100%;
+}
+.tweedefotomettext img
+{
+    width: 100%;
+    height: auto;
+}
+.tweedefotomettext h2
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    color: white;
+}
+
+#fotosvantweedeplek-text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13pt;
+
+}
+.text-tweedefoto
+{
+    display: flex;
+    gap: 20px;
+}
+.inhoud-figuretwee
+{
+    flex: 0 0 auto;
+}
+.inhoud-figuretwee img 
+{
+    width: 200px;
+    height: auto;
+}
+.articlestexttweede-inhoud
+{
+    flex: 1 1 auto;
+}
+.ontdekmeerbutton
+{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #FFCB44;
+    color: white;
+    border-radius: 40px;
+    height: 35px;
+    width: 300px;
+    padding: 0;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ontdekmeerbutton:hover
+{
+    background-color: #FFDB7D;
+}
+.ontdektekst
+{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #FFCB44;
+    font-size: 22pt;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#ontdekfotos
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#ontdekfotos figure
+{
+   position: relative;
+   width: 33.33%;
+   height: auto;
+}
+#ontdekfotos img
+{
+    max-width: 100%;
+    height: 100%;
+}
+#ontdekfotos figcaption
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#tips-section
+{
+    font-size: 24px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    margin-left: 45px;
+}
+.tips
+{
+    color: #972DB1;
+}
+.tips a:hover
+{
+    color: lightblue;
+}
+.tips a:active
+{
+    color: darkmagenta;
+}
+#tips-section h1
+{
+    color: #FFCB44;
+}
+#onderkant
+{
+    margin-top: 15px;
+    background-color: #6A2D79;
+    padding: 20px;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;
+}
+.footer-inhoud
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 4px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.links
+{
+
+flex-grow: 1;
+flex-basis: 100%;
+}
+.links ul
+{
+    list-style-type: none;
+    line-height: 1.6;
+    text-indent: 0;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+.links a
+{
+    color: white;
+    text-decoration: none;
+}
+.links a:hover
+{
+    color: lightblue;
+    text-decoration: underline;
+}
+.contact
+{
+flex-grow: 1;
+flex-basis: 60%;
+}
+.contact p
+{
+    line-height: 2;
+}
+.extra
+{
+
+flex-grow: 1;
+flex-basis: 30%;
+}
+.extra ul
+{
+    list-style-type: none;
+    line-height: 2;
+}
+.extra a
+{
+    color: white;
+    text-decoration: none;
+}
+.extra a:hover
+{
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.footer-inhoud h3
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.copyright
+{
+    padding: 15px 0;
+    text-align: right;
+    border-top: 1px solid;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website voor Beverwijkbezoekers">
+    <meta name="author" content="Sofian Said">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/doen.css" type="text/css">
+    <link rel="icon" href="img/favicon-16x16.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>Doen</title>
+</head>
+<body class="form-body">
+    <header id="bovenkantdetail">
+        <section class="header-content">
+        <a href="index.html">
+        <img title="Logo" id="websitelogo" src="img/LOGOVOORWEBSITE_93x100.png" alt="Website Logo"/>
+        </a>
+        <nav id="mainnav" class="verticale-menu">
+            <ul>
+                <li>
+                    <a href="doen.html">
+                        Doen
+                    </a>
+                </li>
+                <li>
+                    <a href="#" >
+                        Plan het
+                    </a>
+                </li>
+                <li>
+                    <a href="#" >
+                        Extra
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <a id="vraag" href="#" onclick="openSearch()">
+            <img title="zoeklogo" src="img/zoeklogo.png" alt="Search Icon"/>
+        </a>
+        <script>
+            function openSearch() 
+            { 
+                alert("Zoek...");
+            }
+        </script>
+    
+    <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="bezienswaardigheden.html">Bezienswaardigheden</a></li>
+                <li><a href="winkelen.html">Winkelen</a></li>
+                <li><a href="eten.html">Eten/drinken</a></li>
+                <li><a href="activiteiten.html">Activiteiten</a></li>
+            </ul>
+        </nav>
+        </section>
+    </header>
+
+    <section id="introfoto">
+        <img title="gemeente" src="/img/gemeentebeverwijk.jpg" alt="foto gemeente">
+        <h1>
+            <strong>Contact</strong>
+        </h1>
+        </section>
+
+        <article id="contact">
+
+            <aside>
+            </aside>
+
+            <h2>Contacteer ons!</h2>
+            <p class="contactinfo">Wij helpen je graag met eventuele vragen of opmerkingen. </p>
+        
+        <form action="index.html" method="post">
+            <fieldset>
+                <legend>Aanhef*</legend>
+                <p>
+                    <input type="radio" name="aanhef" id="mevrouw" value="mevrouw">
+                    <label for="mevrouw">Mevrouw</label>
+
+                    <input type="radio" name="aanhef" id="heer" value="heer">
+                    <label for="heer">De Heer</label>
+
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Persoonlijke info</legend>
+                <p>
+                <label for="voornaam">Voornaam:*</label>
+                <input type="text" name="voornaam" id="voornaam" placeholder="Invoer" required>
+                
+                <label for="achternaam">Achternaam:*</label>
+                <input type="text" name="achternaam" id="achternaam" placeholder="Invoer" required>
+                </p>
+                <p>
+                    <label for="email">E-mailadres:*</label>
+                    <input type="email" name="email" id="email" placeholder="Invoer" required>
+                    
+                    <label for="telefoon">Telefoonnummer:</label>
+                    <input type="tel" name="telefoon" id="telefoon" placeholder="Invoer">
+                </p>
+            </fieldset>
+                <p>
+                    <label for="bericht">Uw bericht:</label>
+                </p>
+                <p>
+                    <textarea name="bericht" id="bericht" cols="30" rows="10" placeholder="Type hier u bericht" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Verstuur</button>
+                </p>
+        </form>
+        </article>
+
+        <footer id="onderkant">
+            <section class="footer-inhoud">
+                <article class="links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="bezienswaardigheden.html">Bezienswaardigheden</a></li>
+                        <li><a href="eten.html">Eten/Drinken</a></li>
+                        <li><a href="winkelen.html">Winkelen</a></li>
+                        <li><a href="activiteiten.html">Activiteiten/Plezier</a></li>
+                    </ul>
+                </article>
+                <section class="contact">
+                    <h3>Contact</h3>
+                    <p>Sofian Said</p>
+                    <p>Inholland Haarlem</p>
+                    <p>718660@student.inholland.nl</p>
+    
+                </section>
+                <section class="extra">
+                    <h3>Extra</h3>
+                    <article>
+                    <ul>
+                        <li><a href="#">Navigatie</a></li>
+                        <li><a href="#">Plan het</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </article>
+                </section>
+    
+            </section>
+            <section class="copyright">&copy;VisitBeverwijk</section>
+        </footer>
+</body>
+</html>
